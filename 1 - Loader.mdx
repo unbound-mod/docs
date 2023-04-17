@@ -12,7 +12,9 @@ Loaders have configuration flags that can be modified to alter the behaviour of 
 
 # Configuration Locations
 
-`iOS`: You may find the loader configuration file at `On My iPhone` -> `Enmity` -> `Enmity` -> `loader.json`
+#####
+
+`iOS`: You may find the configuration file at `On My iPhone` -> `Enmity` -> `Enmity` -> `settings.json`
 
 ##### **Note:** You may face difficulties finding this directory if you have not sideloaded Enmity's ipa correctly or happen to be on a jailbroken device using the tweak version of Enmity.
 
@@ -25,10 +27,13 @@ Loaders have configuration flags that can be modified to alter the behaviour of 
 
 # Available Configuration Flags
 
+Inside the `settings.json` file, the loader may be configured by creating a `loader` key and adding any of the properties below.
+
 `enabled`: Decides wether the JavaScript bundle will be injected into the app or not. If you'd like to completely disable Enmity temporarily, this is the flag you're looking for.
 
 `devtools`: As stated in the name, this provides tools for developers such as React DevTools, which is crucial for patching various sections of the app's UI.
 
-`bundle`: The bundle resource will be fetched from the URL provided in this option. You may override this if you'd like to load a bundle from somewhere else. Most commonly, you will want to use this if you are testing local changes on Enmity's bundle if you are looking to contribute.
+`update.url`: The bundle resource will be fetched from the URL provided in this option. You may override this if you'd like to load a bundle from somewhere else. Most commonly, you will want to use this if you are testing local changes on Enmity's bundle if you are looking to contribute.
 
-`force_update`: This will force the loader to always fetch the latest bundle from the URL provided in `bundle`. If no URL is provided in `bundle`, the loader will fall back to Enmity's official bundle URL.
+`update.force`: This will force the loader to always fetch the latest bundle from the URL provided in `bundle`. If no URL is provided in `bundle`, the loader will fall back to Enmity's official bundle URL.
+
