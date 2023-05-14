@@ -1,8 +1,8 @@
 # Let's start simple
 
-**In order for Enmity to inject into Discord, it requires a loader.**
+**In order for Unbound to inject into Discord, it requires a loader.**
 
-A loader is a native-side tweak/module that patches certain native functions in order to achieve JavaScript execution. This is used to later load Enmity's JavaScript bundle which provides in-app access and functionality.
+A loader is a native-side tweak/module that patches certain native functions in order to achieve JavaScript execution. This is used to later load Unbound's JavaScript bundle which provides in-app access and functionality.
 
 As Discord is a React Native application, we have several attack vectors for code execution.
 
@@ -14,9 +14,9 @@ Loaders have configuration flags that can be modified to alter the behaviour of 
 
 #####
 
-`iOS`: You may find the configuration file at `On My iPhone` -> `Enmity` -> `Enmity` -> `settings.json`
+`iOS`: You may find the configuration file at `On My iPhone` -> `Unbound` -> `Unbound` -> `settings.json`
 
-##### **Note:** You may face difficulties finding this directory if you have not sideloaded Enmity's ipa correctly or happen to be on a jailbroken device using the tweak version of Enmity.
+##### **Note:** You may face difficulties finding this directory if you have not sideloaded Unbound's ipa correctly or happen to be on a jailbroken device using the tweak version of Unbound.
 
 ##### To find the documents directory on a jailbroken device, you must use a file manager such as `Filza` to convert app UUIDs to app names inside of `/var/mobile/Containers/Data/Application`.
 
@@ -31,11 +31,11 @@ Inside the `settings.json` file, the loader may be configured by creating a `loa
 
 <br>
 
-`enabled`: Decides wether the JavaScript bundle will be injected into the app or not. If you'd like to completely disable Enmity temporarily, this is the flag you're looking for.
+`enabled`: Decides wether the JavaScript bundle will be injected into the app or not. If you'd like to completely disable Unbound temporarily, this is the flag you're looking for.
 
 `devtools`: As stated in the name, this provides tools for developers such as React DevTools, which is crucial for patching various sections of the app's UI.
 
-`update.url`: The bundle resource will be fetched from the URL provided in this option. You may override this if you'd like to load a bundle from somewhere else. Most commonly, you will want to use this if you are testing local changes on Enmity's bundle if you are looking to contribute.
+`update.url`: The bundle resource will be fetched from the URL provided in this option. You may override this if you'd like to load a bundle from somewhere else. Most commonly, you will want to use this if you are testing local changes on Unbound's bundle if you are looking to contribute.
 
-`update.force`: This will force the loader to always fetch the latest bundle from the URL provided in `bundle`. If no URL is provided in `bundle`, the loader will fall back to Enmity's official bundle URL.
+`update.force`: This will force the loader to always fetch the latest bundle from the URL provided in `bundle`. If no URL is provided in `bundle`, the loader will fall back to Unbound's official bundle URL.
 
