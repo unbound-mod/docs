@@ -1,0 +1,34 @@
+---
+title: 'Configuration'
+description: 'Loaders have configuration flags that can be modified to alter the behaviour of them.'
+icon: 'wrench'
+---
+
+Inside the `settings.json` file, the loader may be configured by creating a `unbound` -> `loader` key and adding any of the properties below.
+
+### Flags
+
+`enabled`: Decides wether the JavaScript bundle will be injected into the app or not. If you'd like to completely disable Unbound temporarily, this is the flag you're looking for.
+
+`devtools`: As stated in the name, this provides tools for developers such as React DevTools, which is crucial for patching various sections of the app's UI.
+
+`update.url`: The bundle resource will be fetched from the URL provided in this option. You may override this if you'd like to load a bundle from somewhere else. Most commonly, you will want to use this if you are testing local changes on Unbound's bundle if you are looking to contribute.
+
+`update.force`: This will force the loader to always fetch the latest bundle from the URL provided in `bundle`. If no URL is provided in `bundle`, the loader will fall back to Unbound's official bundle URL.
+
+
+### Configuration Example
+```json
+{
+	"unbound": {
+		"loader": {
+			"enabled": true,
+			"devtools": true,
+			"update": {
+				"force": false,
+				"url": "https://localhost:8080/bundle.js"
+			}
+		}
+	}
+}
+```
