@@ -44,8 +44,8 @@
 		}
 	],
 	"footerSocials": {
-		"twitter": "https://twitter.com/unbound-mod",
-		"github": "https://github.com/mintlify",
-		"facebook": "https://test.com"
+		"twitter": "https://twitter.com/UnboundClient",
+		"github": "https://github.com/unbound-mod",
+		"discord": "https://discord.gg/unbound"
 	}
 }
