@@ -17,7 +17,7 @@ Inside the `settings.json` file, the loader may be configured by creating a `unb
  	As stated in the name, this provides tools for developers such as React DevTools, which is crucial for patching various sections of the app's UI.
 </ResponseField>
 <ResponseField name='update' type='object'>
- 	As stated in the name, this provides tools for developers such as React DevTools, which is crucial for patching various sections of the app's UI.
+	Handles updating of the JavaScript bundle. You may set your own bundle source aswell as force it to always download the latest bundle.
 	<Expandable title='object'>
 		<ResponseField name='url' type='string'>
 			The bundle resource will be fetched from the URL provided in this option. You may override this if you'd like to load a bundle from somewhere else. Most commonly, you will want to use this if you are testing local changes on Unbound's bundle if you are looking to contribute.

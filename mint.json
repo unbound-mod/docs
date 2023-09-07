@@ -5,7 +5,7 @@
 		"dark": "/logo/dark.svg",
 		"light": "/logo/light.svg"
 	},
-	"favicon": "/favicon.png",
+	"favicon": "/logo/dark.svg",
 	"colors": {
 		"primary": "#c74050",
 		"light": "#c74050",
@@ -19,11 +19,15 @@
 			"to": "#9563FF"
 		}
 	},
+	"modeToggle": {
+		"default": "dark",
+		"isHidden": false
+	},
 	"anchors": [
 		{
 			"name": "Discord Server",
 			"icon": "discord",
-			"url": "https://mintlify.com/docs"
+			"url": "https://discord.gg/unbound"
 		},
 		{
 			"name": "GitHub",
@@ -31,6 +35,18 @@
 			"url": "https://github.com/unbound-mod"
 		}
 	],
+	"topAnchor": {
+		"name": "Home",
+		"icon": "building"
+	},
+	"feedback": {
+		"thumbsRating": true,
+		"suggestEdit": true,
+		"raiseIssue": true
+	},
+	"search": {
+		"prompt": "Search documentation..."
+	},
 	"navigation": [
 		{
 			"group": "Loader",
