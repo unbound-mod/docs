@@ -1,6 +1,6 @@
 {
 	"$schema": "https://mintlify.com/schema.json",
-	"name": "tt Kit",
+	"name": "Unbound",
 	"logo": {
 		"dark": "/logo/dark.svg",
 		"light": "/logo/light.svg"
