@@ -23,6 +23,7 @@
 		"default": "dark",
 		"isHidden": false
 	},
+	"backgroundImage": "/images/background.png",
 	"anchors": [
 		{
 			"name": "Discord Server",
@@ -40,7 +41,6 @@
 		"icon": "building"
 	},
 	"feedback": {
-		"thumbsRating": true,
 		"suggestEdit": true,
 		"raiseIssue": true
 	},
