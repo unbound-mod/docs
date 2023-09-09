@@ -49,13 +49,34 @@
 	},
 	"navigation": [
 		{
+			"group": "Documentation",
+			"pages": [
+				"documentation/overview"
+			]
+		},
+		{
 			"group": "Loader",
+			"icon": "arrow-right-to-bracket",
 			"pages": [
 				"loader/introduction",
 				"loader/configuration",
-				"loader/local-development",
+				"loader/local-build",
 				"loader/ios",
 				"loader/android"
+			]
+		},
+		{
+			"group": "API",
+			"icon": "folder-tree",
+			"pages": [
+				"api/metro",
+				"api/patcher",
+				"api/storage",
+				"api/assets",
+				"api/toasts",
+				"api/dialogs",
+				"api/commands",
+				"api/native"
 			]
 		}
 	],
