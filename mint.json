@@ -15,8 +15,8 @@
 			"light": "#fcfcfc"
 		},
 		"anchors": {
-			"from": "#FF7F57",
-			"to": "#9563FF"
+			"from": "#c74050",
+			"to": "#9e333f"
 		}
 	},
 	"modeToggle": {
