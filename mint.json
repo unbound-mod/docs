@@ -69,14 +69,14 @@
 			"group": "API",
 			"icon": "folder-tree",
 			"pages": [
-				"api/metro",
-				"api/patcher",
-				"api/storage",
-				"api/assets",
-				"api/toasts",
-				"api/dialogs",
-				"api/commands",
-				"api/native"
+				"_api/metro",
+				"_api/patcher",
+				"_api/storage",
+				"_api/assets",
+				"_api/toasts",
+				"_api/dialogs",
+				"_api/commands",
+				"_api/native"
 			]
 		}
 	],
