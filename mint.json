@@ -21,7 +21,7 @@
 	},
 	"modeToggle": {
 		"default": "dark",
-		"isHidden": false
+		"isHidden": true
 	},
 	"backgroundImage": "/images/background.png",
 	"anchors": [
