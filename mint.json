@@ -23,10 +23,12 @@
 		"default": "dark",
 		"isHidden": true
 	},
-	"backgroundImage": "/images/background.png",
+	"background": {
+		"style": "grid"
+	},
 	"anchors": [
 		{
-			"name": "Discord Server",
+			"name": "Discord Community",
 			"icon": "discord",
 			"url": "https://discord.gg/unbound"
 		},
@@ -36,10 +38,6 @@
 			"url": "https://github.com/unbound-mod"
 		}
 	],
-	"topAnchor": {
-		"name": "Home",
-		"icon": "building"
-	},
 	"feedback": {
 		"suggestEdit": true,
 		"raiseIssue": true
@@ -47,9 +45,18 @@
 	"search": {
 		"prompt": "Search documentation..."
 	},
+	"layout": "topnav",
+	"sidebar": {
+		"items": "container"
+	},
+	"api": {
+		"auth": {
+			"method": "bearer"
+		}
+	},
 	"navigation": [
 		{
-			"group": "Documentation",
+			"group": "",
 			"pages": [
 				"overview"
 			]
@@ -61,14 +68,41 @@
 				"loader/introduction",
 				"loader/configuration",
 				"loader/local-build",
-				"loader/ios",
-				"loader/android"
+				"loader/ios"
 			]
 		},
 		{
-			"group": "API",
+			"group": "Plugins",
+			"icon": "paintbrush",
+			"pages": [
+				"plugins/introduction",
+				"plugins/debugger",
+				"plugins/manifest"
+			]
+		},
+		{
+			"group": "Themes",
+			"icon": "paintbrush",
+			"pages": [
+				"themes/introduction",
+				"themes/backgrounds",
+				"themes/types",
+				"themes/manifest"
+			]
+		},
+		{
+			"group": "Icon Packs",
+			"icon": "package",
+			"pages": [
+				"icon-packs/introduction",
+				"icon-packs/manifest"
+			]
+		},
+		{
+			"group": "Developer API",
 			"icon": "folder-tree",
 			"pages": [
+				"modules/i18n",
 				"modules/metro",
 				"modules/patcher",
 				"modules/storage",
@@ -76,12 +110,14 @@
 				"modules/toasts",
 				"modules/dialogs",
 				"modules/commands",
-				"modules/native"
+				"modules/native",
+				"modules/utilities",
+				"modules/components"
 			]
 		}
 	],
 	"footerSocials": {
-		"twitter": "https://twitter.com/UnboundClient",
+		"x": "https://twitter.com/UnboundClient",
 		"github": "https://github.com/unbound-mod",
 		"discord": "https://discord.gg/unbound"
 	}
